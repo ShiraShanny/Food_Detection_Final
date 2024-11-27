@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "foodproductdetection"
+version = "0.1.0"
+description = "Food product detection application"
+authors = ["wweavishayaknin <WWEAVISHAYAKNIN@GMAIL.COM>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torchmetrics = "^1.5.2"
+fastai = "^2.7.18"
+torch = "^2.5.1"
+numpy = "^1.26.0"
+langchain = "^0.3.7"
+opencv-python = "4.10.0.84"
+langchain-groq = "^0.2.1"
+streamlit = "^1.40.0"
+pydantic = "^2.9.2"
+duckduckgo-search = "^6.3.3"
+requests = "^2.32.3"
+pillow = "^11.0.0"
+opencv-python-headless = "^4.10.0.84"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+foodproductdetection = "foodproductdetection.appproductdetection:main"
+
+[server]
+maxUploadSize = 1028
+headless = true
+enableCORS = false
+allowRunOnSave = true
+
+[client]
+serverTimeout = 120
